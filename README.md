@@ -38,13 +38,14 @@ Operations efficiency
 - [ ]  SQL Managed Instance
 - [ ]  Network Security Groups
 - [ ]  DDOS Protection - Standard
+- [ ]  Application Insights
 - [ ]  Workloads replicated across Azure zones for HA
 
 
  **Design Considerations**
 
 App Gateway with WAF:
-- Load balances at traffic at application layer
+- Load balances traffic at application layer
 - Zone redundant service that best meets the solution requirement
 - SSL Off loading
 - Protects the web app from attacks using the WAF service
@@ -59,4 +60,34 @@ Azure Front door and Traffic Manager services provide global scale load balancin
 Based on the information provided in the requirements it appears that N-Tier web application does not require global scale load balancing, so the Application Gateway with WAF service chosen.
 
 Refer to the [Decision tree for load balancing in Azure ](https://docs.microsoft.com/en-us/azure/architecture/guide/technology-choices/load-balancing-overview#decision-tree-for-load-balancing-in-azure)
+
+Azure Virtual Machine Scale Set
+
+- Fully managed PaaS service with no management/operational overhead
+- Rule based autoscaling in real time (on demand)
+- Zone redundancy and native HA support
+- Custom VM image to provision VM instances supported
+
+Alternative services:
+
+- VMs could be created and deployed in an availability sets across Azure zones to meet High availability requirement, but no native
+- autoscaling features available.
+- Custom image to create VMs is not supported
+- VMs Management and operational costs
+
+As the VM Scale set meets all the solution requirements and design principles, this service is chosen.
+
+Refer to [Choose an Azure Compute Service for your application](https://docs.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree#choose-a-candidate-service)
+
+Azure SQL Managed Instance
+
+- Fully Managed service
+- Auto scaling is natively provided
+- Automated backups
+- No management and operational cost
+
+As the solution requirement already instructs to use the SQL Managed Instance and the PaaS service meets core design principles
+SQL Managed instance service is selected and utilised in the solution.
+
+Refer to [Azure SQL Managed Instance Faqs](https://docs.microsoft.com/en-us/azure/azure-sql/managed-instance/frequently-asked-questions-faq) for more info 
 ___________________________________________________________________________________________________________________________________________________________________________
