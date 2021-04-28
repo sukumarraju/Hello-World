@@ -15,7 +15,19 @@ Using Terraform and a combination of tools of your choice, create as a GitHub re
 _______________________________________________________________________________________________________________________________________________________________________________
 
 **Highly Available Web App Design**
-![N Tier H A Web App](HLD/N-Tier HA Web App.png)
 
-**Azure Services**
-Web App Gateway
+![H L D1](HLD/HLD1.png)
+
+**Azure Services**:
+
+- [ ]  App Gateway with WAF (SKU v2)
+- [ ]  Public IP Address
+- [ ]  VM Availability Set
+- [ ]  Level 4 Load Balancer for SQL DB
+- [ ]  SQL Managed Instance
+- [ ]  Network Security Groups
+- [ ]  DDOS Protection - Standard
+- [ ]  Workloads replicated across Azure zones for HA
+___________________________________________________________________________________________________________________________________________________________________________
+
+ 
