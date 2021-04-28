@@ -15,5 +15,7 @@ Using Terraform and a combination of tools of your choice, create as a GitHub re
 _______________________________________________________________________________________________________________________________________________________________________________
 
 **Highly Available Web App Design**
-![H L D](HLD/HLD.png)
+![N Tier H A Web App](HLD/N-Tier HA Web App.png)
 
+**Azure Services**
+Web App Gateway
