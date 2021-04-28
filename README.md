@@ -16,18 +16,47 @@ ________________________________________________________________________________
 
 **Highly Available Web App Design**
 
-![H L D1](HLD/HLD1.png)
+Below listed standard design principles considered for this solution
+
+```<language>
+Security
+Performance & Scalability
+Availability & recoverability (Reliability)
+Cost optimisation
+Operations efficiency
+
+```
+![H L D6](HLD/HLD6.png)
+
 
 **Azure Services**:
 
 - [ ]  App Gateway with WAF (SKU v2)
 - [ ]  Public IP Address
-- [ ]  VM Availability Set
-- [ ]  Level 4 Load Balancer for SQL DB
+- [ ]  VM Scale Set
+- [ ]  Layer 4 (Network) Load Balancer for SQL DB
 - [ ]  SQL Managed Instance
 - [ ]  Network Security Groups
 - [ ]  DDOS Protection - Standard
 - [ ]  Workloads replicated across Azure zones for HA
-___________________________________________________________________________________________________________________________________________________________________________
 
- 
+
+ **Design Considerations**
+
+App Gateway with WAF:
+- Load balances at traffic at application layer
+- Zone redundant service that best meets the solution requirement
+- SSL Off loading
+- Protects the web app from attacks using the WAF service
+- Cookie affinity
+- URL based routes
+- HTTP headers rewrite support
+- Fully managed, highly scalable and available service with security via WAF.
+
+Alternative services:
+
+Azure Front door and Traffic Manager services provide global scale load balancing across Azure regions.
+Based on the information provided in the requirements it appears that N-Tier web application does not require global scale load balancing, so the Application Gateway with WAF service chosen.
+
+Refer to the [Decision tree for load balancing in Azure ](https://docs.microsoft.com/en-us/azure/architecture/guide/technology-choices/load-balancing-overview#decision-tree-for-load-balancing-in-azure)
+___________________________________________________________________________________________________________________________________________________________________________
