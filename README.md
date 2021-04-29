@@ -116,5 +116,22 @@ Alternatives:
 - Red Hat Ansible Automation Platform
 - AWS CloudFormation
 
+Terraform is widely adopted Open Source Project with great community that meets the IaC and automation requirements.
+Azure native ARM templates are difficult to troubleshoot and they do not provide all the Terraform features.
+So Terraform is selected and utilised in this solution.
+
+Refer to Terraform documenation [here](https://www.terraform.io/docs/index.html)
+
+Packer
+- Builds automated VM images
+- Multi cloud support
+- Free open source tool
+- Integrates with Azure and DevOps pipelines 
+
+As the solution requirements already instructed to use and the tool meets all the technical requiements
+it has been selected and used in this solution.
+
+Refer to Packer documentation [here](https://www.packer.io/docs)
+
 
   ___________________________________________________________________________________________________________________________________________________________________________
