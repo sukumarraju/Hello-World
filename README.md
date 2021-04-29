@@ -150,7 +150,7 @@ As the solution requirements instructs to use GitHub and meets all the requiemen
 to store the source code and provide documentation (via README.md).
 
 Refer to [GitHub](https://github.com/) portal for more info
-  ___________________________________________________________________________________________________________________________________________________________________________
+_____________________________________________________________________________________________________________________________________________________________________________
 
 **Security** 
 
@@ -184,6 +184,7 @@ Infrastructure and Network
 Data and Application
 - Web Application Firewall
 - Adopt DevSecOps - automate end-to-end security scanning via automation. use Checkmarx and OWASAP
+- Source code testing - SAST & DAST
 - Azure Defender for SQL to perform scheduled assessments and resolve 
 - Azure Policies and audit logging
 - Azure monitor logs and metrics
@@ -195,3 +196,30 @@ Encryption
 - Encryption for data in use using the client side tools (Visual Studio)
 - Identify and classify data
 - Encrypt VM disks to secure sensitive data
+_____________________________________________________________________________________________________________________________________________________________________________
+**Auditor Review**
+
+Below listed are the key areas to concentrate and improve the current state of the solution
+Security
+- Use Azure Security center and improve secure score
+- Automate monitoring via alerts and resolve non-complaint services
+- Enable logging for all Azure services and store logs in Azure storage account or Event Hub for long time retention.
+- Enable Microsoft Security Baselines as the default policy within Security center to improve security posture.
+
+Regulations Compliance
+- GDPR Compliance 
+- Data residency requirements
+- Personal Data Protection 
+- PCI-DSS
+
+Other areas
+- Review Infrastructure Design
+- Source code Review (DAST and SAST)
+- Use credential scanner and move credentials to Azure Key Vault
+- Review identity reports and resolve any isssues using the Azure AD Identity reports. 
+- Review Azure Policies and deploy relevant built-in or custom guardrails
+
+
+
+
+ 
