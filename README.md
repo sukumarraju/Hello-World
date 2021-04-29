@@ -152,3 +152,45 @@ to store the source code and provide documentation (via README.md).
 Refer to [GitHub](https://github.com/) portal for more info
   ___________________________________________________________________________________________________________________________________________________________________________
 
+**Security** 
+
+security aspects that must be considered in the architecture and pipelines
+
+Use defence in depth strategy to defence against malicious attacks across various layers of the solution as shown below
+
+This approach removes reliance on any single layer of protection. It also acts to slow down an attack and provide alert telemetry that can be acted upon, either automatically or manually.
+
+![Security](HLD/security.png)
+
+Identity and access Management
+- MFA
+- Conditional Access
+- RBACS
+- Managed Identities
+- Privileged Identity Management (PIM)
+- Azure AD Identity protection
+
+Infrastructure and Network
+- Azure Application Gateway
+- Azure DDoS Protection Standard
+- Web Application firewall
+- Azure Firewall
+- Azure Key Vault for storing credentials, certs and secrets
+- Azure Defender
+- Network micro-segmentation via subnets
+- Azure Private Link and private service endpoints
+- Use Service Endpoint to restrict traffic between Azure services within Azure backbone network.
+
+Data and Application
+- Web Application Firewall
+- Azure DevOps - use Checkmarx and OWASAP
+- Azure Defender for SQL to perform scheduled assessments and resolve 
+- Azure Policies and audit logging
+- Azure monitor logs and metrics
+
+Encryption
+- Encryption at rest via SQL Transparent data encryption
+- Encryption in transit
+- Encryption for data in use using the client side tools (Visual Studio)
+- Identify and classify data
+- Encrypt VM disks to secure sensitive data
