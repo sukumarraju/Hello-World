@@ -183,13 +183,14 @@ Infrastructure and Network
 
 Data and Application
 - Web Application Firewall
-- Azure DevOps - use Checkmarx and OWASAP
+- Adopt DevSecOps - automate end-to-end security scanning via automation. use Checkmarx and OWASAP
 - Azure Defender for SQL to perform scheduled assessments and resolve 
 - Azure Policies and audit logging
 - Azure monitor logs and metrics
 
+
 Encryption
-- Encryption at rest via SQL Transparent data encryption
+- Encryption at rest via SQL Transparent data encryption (enabled by default)
 - Encryption in transit
 - Encryption for data in use using the client side tools (Visual Studio)
 - Identify and classify data
