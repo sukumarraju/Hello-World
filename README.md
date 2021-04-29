@@ -90,4 +90,31 @@ As the solution requirement already instructs to use the SQL Managed Instance an
 SQL Managed instance service is selected and utilised in the solution.
 
 Refer to [Azure SQL Managed Instance Faqs](https://docs.microsoft.com/en-us/azure/azure-sql/managed-instance/frequently-asked-questions-faq) for more info 
-___________________________________________________________________________________________________________________________________________________________________________
+
+Azure App Insights
+
+- An extensible Application Performance Management (APM) service to monitor applications. 
+- Automatically detects performance anomalies, and includes powerful analytics tools to help diagnose issues and to understand the web application usage. 
+- Designed to help you continuously improve performance and usability
+- Also detects malicious attacks to take necessary remediation and improve security posture
+
+As the Application Insights service is a feature available within Azure Monitor, natively supports the web application with insights and
+supports various tools and technologies integration it is selected and utilised in this solution.
+
+Terraform
+
+- A tool for creating, changing, and versioning infrastructure with higher safety and efficiency via automation.
+- In-built graphing features for visualization of infrastructure
+- Supports multi cloud deployment and development of multi-tier applications 
+- Provides the ability for understanding resource relationships
+- Capability for breaking down a configuration into smaller parts for ease of source organization and maintenance
+- Integrates with wide variety of tools in the DevOps i.e., Azure DevOps, GitHub and Visual Studio.
+
+Alternatives:
+- Azure Resource Manager Templates
+- Vagrant
+- Red Hat Ansible Automation Platform
+- AWS CloudFormation
+
+
+  ___________________________________________________________________________________________________________________________________________________________________________
