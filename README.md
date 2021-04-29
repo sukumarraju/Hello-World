@@ -134,4 +134,21 @@ it has been selected and used in this solution.
 Refer to Packer documentation [here](https://www.packer.io/docs)
 
 
+GitHub
+- Free community supported source code repository
+- There are advanced features available in paid plans.
+- Workflows automates process made up of one or more jobs
+- Integrates with Visual Studio and DevOps 
+- Source code Version control provided
+
+Alternatives
+- Azure Repos
+- Git
+- SVN
+
+As the solution requirements instructs to use GitHub and meets all the requiements, GitHub has been utilised
+to store the source code and provide documentation (via README.md).
+
+Refer to [GitHub](https://github.com/) portal for more info
   ___________________________________________________________________________________________________________________________________________________________________________
+
