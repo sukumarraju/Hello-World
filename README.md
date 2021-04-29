@@ -49,7 +49,7 @@ Operations efficiency
 - Git Hub to store source Code
 - Markdown Editor to formate README.md via Visual Studio
 
-> Note that source code is accessible from the above folders, i.e. AzurePipelines, Packer, Terraform and WebApp.
+> Note that source code is accessible from the above folders, i.e. AzurePipelines, Packer, Terraform and WebApp on this page.
 
  **Design Considerations**
 
