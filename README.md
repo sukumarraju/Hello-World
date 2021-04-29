@@ -41,6 +41,15 @@ Operations efficiency
 - [ ]  Application Insights
 - [ ]  Workloads replicated across Azure zones for HA
 
+**Tools**
+- Web based tool app.cloudskew.com used for creating the design diagram
+- Visual Studio Code for writing, testing, and deploying the source code
+- Azure DevOps for CI/CD Pipeline
+- Windows PowerShell ISE to build and deploy Packer gold Image
+- Git Hub to store source Code
+- Markdown Editor to formate README.md via Visual Studio
+
+> Note that source code is accessible from the above folders, i.e. AzurePipelines, Packer, Terraform and WebApp.
 
  **Design Considerations**
 
@@ -200,6 +209,7 @@ ________________________________________________________________________________
 **Auditor Review**
 
 Below listed are the key areas to concentrate and improve the current state of the solution
+
 Security
 - Use Azure Security center and improve secure score
 - Automate monitoring via alerts and resolve non-complaint services
@@ -212,7 +222,7 @@ Regulations Compliance
 - Personal Data Protection 
 - PCI-DSS
 
-Other areas
+Others
 - Review Infrastructure Design
 - Source code Review (DAST and SAST)
 - Use credential scanner and move credentials to Azure Key Vault
